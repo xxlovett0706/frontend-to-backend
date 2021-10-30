@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <title>音频和视频</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <!--
+        音频标签 用来引入一个外部的音频文件
+
+        属性
+            controls 是否允许用户控制播放，默认情况下不允许用户自己控制播放停止
+            autoplay 是否自动播放，目前大部分浏览器不会自动对音乐进行播放
+            loop 是否循环播放
+    -->
+    <!--第一种写法-->
+    <audio src=""></audio>
+    <!--第二种写法，可以让不支持的浏览器显示文字-->
+    <audio controls>
+        <!--对不起，您的浏览器不支持播放音频，请升级浏览器-->
+        <!--下面可以写多个 source，当一个格式不支持，可以用备用的格式-->
+        <source src="">
+        <source src="">
+        <!--文字提示或 embed 任选其一-->
+        <embed src="" type="audio/mp3">
+    </audio>
+
+    <!--
+        视频标签 用来引入一个外部的视频文件
+        使用方式和 audio 基本一样
+    -->
+
+    <video controls>
+        <source src="">
+        <embed src="" type="video/mp4">
+    </video>
+</body>
+</html>
