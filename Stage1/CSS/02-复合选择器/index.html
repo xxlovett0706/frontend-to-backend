@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>复合选择器</title>
+    <style>
+        /* 交集选择器 */
+        div.red {
+            color: red;
+        }
+        /* 并集选择器 */
+        div, p {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eligendi facere labore laudantium magni, neque nesciunt obcaecati officia officiis possimus provident quae, rem veniam, vitae voluptatibus. Ab animi deleniti deserunt.</div>
+    <p class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi aspernatur dolor illum ipsum quibusdam repellendus sapiente ullam! Consequuntur cupiditate debitis deserunt itaque. A ab animi deleniti facilis laudantium necessitatibus!</p>
+</body>
+</html>

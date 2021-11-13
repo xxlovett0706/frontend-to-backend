@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>关系选择器</title>
+    <style>
+        /* 后代选择器 */
+        div span {
+            background-color: yellow;
+        }
+
+        /* 子代选择器 */
+        div > span {
+            color: red;
+        }
+
+        /* 兄弟选择器（第一个元素后面的一个同级元素） */
+        p + span {
+            font-size: 20px;
+        }
+
+        /* 兄弟选择器（第一个元素后面的所有同级元素） */
+        p ~ span {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        我是一个div元素
+        <p>
+            我是div元素中的p元素
+            <span>我是p元素中的span元素</span>
+        </p>
+        <span>我是div元素中的span元素</span>
+    </div>
+</body>
+</html>
